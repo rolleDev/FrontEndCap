@@ -1,6 +1,4 @@
-                  
- 
-<h1 align="center" style="font-weight: bold;">Capstone Project 💻</h1>
+<h1 align="center" style="font-weight: bold;">Medical Appointment Booking 💻</h1>
 
 <p align="center">
 <a href="#tech">Technologies</a>
@@ -9,14 +7,12 @@
 <a href="#contribute">Contribute</a> 
 </p>
 
-
-<p align="center">Simple description of what your project do or how to use it</p>
-
+<p align="center">Description: a website where you can schedule an appointment with a Doctor</p>
 
 <p align="center">
-<a href="https://github.com/ShaanCoding">📱 Visit this Project</a>
+<a href="https://github.com/rolleDev/grihf-frontend_capstone_starter_code.git">📱 Visit this Project</a>
 </p>
- 
+
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
@@ -27,30 +23,30 @@
  
 <h2 id="technologies">💻 Technologies</h2>
 
-- list of all technologies you used
-- react
-- styled components
-- another example
- 
+- Node.js
+- React.js
+- Bootstrap
+- Vite
+
 <h2 id="started">🚀 Getting started</h2>
 
 Here you describe how to run your project locally
- 
+
 <h3>Prerequisites</h3>
 
 Here you list all prerequisites necessary for running your project. For example:
 
 - [NodeJS](https://github.com/)
 - [Git 2](https://github.com)
- 
+
 <h3>Cloning</h3>
 
 How to clone your project
 
 ```bash
-git clone your-project-url-in-github
+git clone https://github.com/rolleDev/grihf-frontend_capstone_starter_code.git
 ```
- 
+
 <h3>Starting</h3>
 
 How to start your project
@@ -59,7 +55,7 @@ How to start your project
 cd project-name
 npm some-command-to-run
 ```
- 
+
 <h2 id="colab">🤝 Collaborators</h2>
 
 <p>Special thank you for all people that contributed for this project.</p>
@@ -95,7 +91,7 @@ Here you will explain how other developers can contribute to your project. For e
 2. `git checkout -b feature/NAME`
 3. Follow commit patterns
 4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
- 
+
 <h3>Documentations that might help</h3>
 
 [📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)

@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
-    <link rel="stylesheet" href="./LandingPage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Appointment Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./LandingPage.css">
 </head>
+
 <body>
-    <section class="hero-section">
-        <div>
-          <div data-aos="fade-up" class="flex-hero">
-              
-              <h1>
-                Your Health<br/>
-                <span class="text-gradient">
-                  
-                  Our Responsibility
-                </span>
-              </h1>
-                <div class="blob-cont">
-                    <div class="blue blob"></div>
-                </div>
-                <div class="blob-cont">
-                    <div class="blue1 blob"></div>
-                </div>
-              <h4>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non cum rem voluptatem! 
-              </h4>
-              <a href="#services">
-                <button class="button">Get Started</button>
-              </a>
-                
-          </div>
-  
+  <!--Navigation bar-->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/Images/Logo.png" alt="Stay Healthy Logo">
+      <span>StayHealthy</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Appointment</a></li>
+      <li><a href="#">Health Blog</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+    <div class="login-buttons">
+      <button class="sign-up">Sign Up</button>
+      <button class="log-in" onclick="openLoginModal()">Log In</button>
+    </div>
+  </nav>
+  <!--Login Modal-->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+      <div class="login-container">
+        <img src="/Images/Logo.png" alt="logo" class="logo">
+        <h2>Login</h2>
+        <p>Are you a new member? <a href="#" class="sign-up-link">Sign Up Here</a></p>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Value" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Value" required>
+
+          <button type="submit" class="sign-in-btn">Sign In</button>
+        </form>
+        <a href="#" class="forgot-password">Forgot Password</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <div>
+      <div data-aos="fade-up" class="flex-hero">
+
+        <h1>
+          Your Health<br />
+          <span class="text-gradient">
+
+            Our Responsibility
+          </span>
+        </h1>
+        <div class="blob-cont">
+          <div class="blue blob"></div>
         </div>
-      </section>
+        <div class="blob-cont">
+          <div class="blue1 blob"></div>
+        </div>
+        <h4>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non
+          cum rem voluptatem!
+        </h4>
+        <a href="#services">
+          <button class="button">Get Started</button>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <script src="/Javascript/script.js"></script>
 </body>
+
 </html>

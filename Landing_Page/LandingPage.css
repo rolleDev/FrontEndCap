@@ -5,7 +5,7 @@
 }
 .hero-section {
     height: 100vh;
-    padding-top: 15rem;
+    padding-top: 8rem;
     background-color: transparent;
     z-index: -1;
 }
@@ -53,9 +53,6 @@
     align-items: center;
     gap: 0px;
 }
-
-
-
 
 ul {
     list-style: none;
@@ -183,4 +180,237 @@ li {
     60% {top: 0; left: 0; transform: scale(1.3);}
     100% {top: 0; left: 0; transform: scale(1);}
   }
-  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+  }
+
+/* Navbar */
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+
+  .logo img {
+      width: 30px;
+      margin-right: 10px;
+  }
+
+  .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+  }
+
+  .nav-links li {
+      margin-right: 20px;
+  }
+
+  .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+  }
+
+  .nav-links li a:hover {
+      color: #6a65d8;
+  }
+
+  .login-buttons {
+      display: flex;
+      gap: 10px;
+  }
+
+  .login-buttons .sign-up,
+  .login-buttons .log-in {
+      border: 1px solid #6a65d8;
+      background-color: white;
+      color: #6a65d8;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100px;
+  }
+
+  .login-buttons .sign-up:hover,
+  .login-buttons .log-in:hover {
+      background-color: #6a65d8;
+      color: white;
+  }
+
+  .login-buttons .sign-up {
+      border-color: #6a65d8;
+  }
+
+  .login-buttons .log-in {
+      border-color: #6a65d8;
+  }
+
+  /* Modal */
+/* Modal background overlay */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensures modal is on top of other elements */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    /* Ensures it’s responsive on smaller screens */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds subtle shadow */
+    animation: fadeIn 0.3s ease-in-out;
+    /* Smooth fade-in animation */
+    position: relative;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff4c4c;
+    /* Red color on hover for better UX */
+}
+
+/* Style for the content within the modal */
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-content form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.modal-content form input[type="email"],
+.modal-content form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-content form input[type="email"]:focus,
+.modal-content form input[type="password"]:focus {
+    outline: none;
+    border-color: #6a65d8;
+    /* Highlighted border color when focused */
+    box-shadow: 0 0 5px rgba(106, 101, 216, 0.5);
+}
+
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #555;
+    /* Slightly lighter on hover */
+}
+
+/* Additional styling for forgot password link */
+.forgot-password {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6a65d8;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Logo inside the modal */
+.modal-content .logo {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: auto;
+    /* Maintains the aspect ratio */
+    margin-bottom: 15px;
+    /* Adds spacing below the logo */
+    margin: 0 auto 15px;
+    display: block;
+    
+}
