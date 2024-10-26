@@ -414,3 +414,144 @@ li {
     display: block;
     
 }
+/* Modal overlay */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensures it’s on top */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff4c4c;
+}
+
+/* Logo styling */
+.modal-content .logo {
+    width: 50px;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Headings and links */
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.login-link {
+    color: #6a65d8;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Form styling */
+.modal-content form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="tel"],
+.modal-content form input[type="email"],
+.modal-content form input[type="password"],
+.modal-content form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-content form input:focus,
+.modal-content form select:focus {
+    outline: none;
+    border-color: #6a65d8;
+    box-shadow: 0 0 5px rgba(106, 101, 216, 0.5);
+}
+
+/* Button styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 48%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+}
+
+.reset-btn {
+    width: 48%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
