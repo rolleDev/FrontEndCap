@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment Booking</title>
+    <link rel="stylesheet" href="login/login.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="signup/signup.css">
+    <link rel="stylesheet" href="/Landing_Page/LandingPage.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/Logo.png" alt="Stay Healthy Logo">
+            <span>StayHealthy</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Health Blog</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+        <div class="login-buttons">
+            <button class="sign-up" onclick="openSignUpModal()">Sign Up</button>
+            <button class="log-in" onclick="openLoginModal()">Log In</button>
+        </div>
+    </nav>
+    <!--Hero Section-->
+    <section class="hero-section">
+        <div>
+            <div data-aos="fade-up" class="flex-hero">
+    
+                <h1>
+                    Your Health<br />
+                    <span class="text-gradient">
+    
+                        Our Responsibility
+                    </span>
+                </h1>
+                <div class="blob-cont">
+                    <div class="blue blob"></div>
+                </div>
+                <div class="blob-cont">
+                    <div class="blue1 blob"></div>
+                </div>
+                <h4>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis
+                    quibusdam non
+                    cum rem voluptatem!
+                </h4>
+                <a href="#services">
+                    <button class="button">Get Started</button>
+                </a>
+    
+            </div>
+    
+        </div>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+            <div class="login-container">
+                <img src="/Images/Logo.png" alt="logo" class="logo">
+                <h2>Login</h2>
+                <p>Are you a new member? <a href="#" class="sign-up-link"
+                        onclick="openSignUpModal(); closeLoginModal();">Sign Up Here</a></p>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Value" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Value" required>
+
+                    <button type="submit" class="sign-in-btn">Sign In</button>
+                </form>
+                <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeSignUpModal()">&times;</span>
+            <div class="login-container">
+                <img src="/Images/Logo.png" alt="logo" class="logo">
+                <h2>Sign Up</h2>
+                <p>Already a Member? <a href="#" onclick="openLoginModal(); closeSignUpModal();"
+                        class="login-link">Login</a></p>
+                <form>
+                    <label for="role">Role</label>
+                    <select id="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="nurse">Nurse</option>
+                    </select>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Value" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Value" required>
+
+                    <label for="email-signup">Email</label>
+                    <input type="email" id="email-signup" placeholder="Value" required>
+
+                    <label for="password-signup">Password</label>
+                    <input type="password" id="password-signup" placeholder="Value" required>
+
+                    <div class="button-group">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="login/login.js"></script>
+    <script src="signup/signup.js"></script>
+
+</body>
+
+</html>
