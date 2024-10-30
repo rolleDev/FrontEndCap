@@ -1,4 +1,9 @@
 /* Sign Up Modal specific styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+
 .modal-content form select {
     width: 100%;
     padding: 12px;
@@ -43,4 +48,8 @@
 
 .reset-btn:hover {
     background-color: #c0392b;
+}
+.logo {
+    size: 25px;
+    position: relative;
 }

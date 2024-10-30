@@ -8,8 +8,9 @@ function SignUpModal({ isOpen, closeSignUpModal, openLoginModal }) {
         <div className="modal" onClick={closeSignUpModal}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <span className="close-btn" onClick={closeSignUpModal}>&times;</span>
+               
                 <div className="login-container">
-                    <img src="/Images/Logo.png" alt="logo" className="logo" />
+                    <img className='logo' src="/Logo.png" alt="Stay Healthy Logo"/>
                     <h2>Sign Up</h2>
                     <p>
                         Already a Member?{' '}
@@ -35,7 +36,7 @@ function SignUpModal({ isOpen, closeSignUpModal, openLoginModal }) {
 
                         <label htmlFor="password-signup">Password</label>
                         <input type="password" id="password-signup" placeholder="Value" required />
-
+                    
                         <div className="button-group">
                             <button type="submit" className="submit-btn">Submit</button>
                             <button type="reset" className="reset-btn">Reset</button>

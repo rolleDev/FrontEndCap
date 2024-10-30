@@ -9,7 +9,7 @@ function LoginModal({ isOpen, closeLoginModal, openSignUpModal }) {
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <span className="close-btn" onClick={closeLoginModal}>&times;</span>
                 <div className="login-container">
-                    <img src="/Images/Logo.png" alt="logo" className="logo" />
+                    <img className= 'logo' src="/Logo.png" alt="Stay Healthy Logo" />
                     <h2>Login</h2>
                     <p>
                         Are you a new member?{' '}
