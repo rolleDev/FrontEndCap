@@ -5,7 +5,7 @@ function Navbar({ openLoginModal, openSignUpModal }) {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="/Images/Logo.png" alt="Stay Healthy Logo" />
+                <img src="Images/Logo.png" alt="Stay Healthy Logo" />
                 <span>StayHealthy</span>
             </div>
             <ul className="nav-links">

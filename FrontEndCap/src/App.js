@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
+import LandingPage from './components/LandingPage/LandingPage';
 import LoginModal from './components/LoginModal/LoginModal';
 import SignUpModal from './components/SignUpModal/SignUpModal';
 import './App.css';
 
 function App() {
+    // State to control modal visibility
     const [isLoginOpen, setLoginOpen] = useState(false);
     const [isSignUpOpen, setSignUpOpen] = useState(false);
 
@@ -14,6 +16,7 @@ function App() {
                 openLoginModal={() => setLoginOpen(true)} 
                 openSignUpModal={() => setSignUpOpen(true)} 
             />
+            <LandingPage /> {/* This displays the landing page content */}
             <LoginModal 
                 isOpen={isLoginOpen} 
                 closeLoginModal={() => setLoginOpen(false)} 
